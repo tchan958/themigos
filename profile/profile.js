@@ -29,3 +29,31 @@ function logout () {
             window.location.assign("/");  // redirect to landing page
         });
 }
+
+// create a new post
+function post () {
+    var myHeaders = new Headers();
+    const token = getLoginData() 
+    console.log(token.token)
+    myHeaders.append("accept", "application/json");
+    myHeaders.append("Authorization", "Bearer" + token.token);
+    myHeaders.append("Content-Type", "application/json");
+    
+    let raw = JSON.stringify({
+      text: document.getElementById("capturepost").value,
+    });
+    
+    var requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+    
+    fetch("https://microbloglite.herokuapp.com/api/posts", requestOptions)
+      .then(response => response.json())
+      .then(result => console.log(result))
+      .catch(error => console.log('error', error));
+    
+      document.getElementById("clearpost").value=" ";
+    }
