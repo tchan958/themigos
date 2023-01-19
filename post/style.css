@@ -1,0 +1,135 @@
+/* WHOLE PAGE */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+#search, #logout, #user {
+    float: right;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #111;
+}
+
+#search-input {
+    padding: 12px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: 2px;
+}
+
+/* CARD */
+.post {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .username {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .post-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .post-text {
+    margin-bottom: 20px;
+  }
+  
+  .post-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .like-button, .comment-button, .share-button {
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .like-button:hover, .comment-button:hover, .share-button:hover {
+    background-color: #ccc;
+  }
+  
+
+/* WRAPPER */
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+    padding: 15px;
+    background: #f2f2f2;
+}
+
+.icon {
+    color: gray;
+    margin: auto;
+    width: 100%;
+    cursor: pointer;
+    text-shadow: 5px 8px 15px #5b6264;
+    transition: .5s;
+}
+
+.icon:hover {
+    color: #ba0015;
+    transform: scale(1.2);
+}
+
+/* HOW MANY TIMES LIKE OR DISLIKE IS CLICKED */
+input {
+    color: grey;
+    margin: auto;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    background: none;
+    pointer-events: none;
+
+}
