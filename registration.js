@@ -30,11 +30,7 @@ function registerUser(event) {
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 }
-form.addEventListener('submit', function () {
-    console.log("formsubmit")
+form.addEventListener('submit', function (e) {
+    e.preventDefault() 
+    registerUser()
 })
-
-let signup = document.getElementById("signup")
-
-
-signup.addEventListener("click", registerUser)
