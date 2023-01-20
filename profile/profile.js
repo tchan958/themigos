@@ -32,11 +32,10 @@ function logout () {
 
 // create a new post
 function post () {
-    var myHeaders = new Headers();
-    const token = getLoginData() 
-    console.log(token.token)
+    let myHeaders = new Headers();  
+    let loginData= getLoginData();
     myHeaders.append("accept", "application/json");
-    myHeaders.append("Authorization", "Bearer" + token.token);
+    myHeaders.append("Authorization", "Bearer " + loginData.token);
     myHeaders.append("Content-Type", "application/json");
     
     let raw = JSON.stringify({
@@ -54,6 +53,44 @@ function post () {
       .then(response => response.json())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));
-    
-      document.getElementById("clearpost").value=" ";
+  
     }
+
+
+    // display posts on profile page
+    
+    function displaypost(){
+      let myHeaders = new Headers();  
+      let loginData= getLoginData();
+      myHeaders.append("accept", "application/json");
+      myHeaders.append("Authorization", "Bearer " + loginData.token);
+      myHeaders.append("Content-Type", "application/json");
+      
+      let raw = JSON.stringify({
+        text: document.getElementById("capturepost").value,
+      });
+      
+      var requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        
+        redirect: 'follow'
+      };
+      
+      fetch("https://microbloglite.herokuapp.com/api/posts?limit=500&offset=0", requestOptions)
+        .then(response => response.json())
+        .then((result) => {
+          result.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+          document.getElementById("getpost").innerHTML = result.map(displaytemplate).join(" ")
+    
+      })
+      .catch(error => console.log('error', error));
+    } 
+    displaypost();
+function displaytemplate(post){
+  return `
+  <h2 class="username">${post.username}</h2>
+  <h4 class="text">${post.text}</h4>
+  <h4 class="time">${post.time}</h4>
+
+  `}
