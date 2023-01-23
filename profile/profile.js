@@ -54,6 +54,51 @@ function post () {
       .then(response => response.json())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));
+<<<<<<< Updated upstream
     
       document.getElementById("clearpost").value=" ";
     }
+=======
+  
+    }
+
+
+    // display posts on profile page
+    
+//     function displaypost(){
+//       let myHeaders = new Headers();  
+//       let loginData= getLoginData();
+//       myHeaders.append("accept", "application/json");
+//       myHeaders.append("Authorization", "Bearer " + loginData.token);
+//       myHeaders.append("Content-Type", "application/json");
+      
+//       let raw = JSON.stringify({
+//         text: document.getElementById("capturepost").value,
+//       });
+      
+//       var requestOptions = {
+//         method: 'GET',
+//         headers: myHeaders,
+        
+//         redirect: 'follow'
+//       };
+      
+//       fetch("https://microbloglite.herokuapp.com/api/posts?limit=500&offset=0", requestOptions)
+//         .then(response => response.json())
+//         .then((result) => {
+//           result.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+//           document.getElementById("getpost").innerHTML = result.map(displaytemplate).join(" ")
+    
+//       })
+//       .catch(error => console.log('error', error));
+//     } 
+//     displaypost();
+// function displaytemplate(post){
+//   return `  
+//   <div class="post">
+//   <h2 class="username">${post.username}</h2>
+//   <h3 class="text">${post.text}</h3>
+//   <h4 class="time">${post.time}</h4>
+//   </div>
+//   `}
+>>>>>>> Stashed changes

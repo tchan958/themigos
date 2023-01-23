@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+    
+    color: #333;
+    padding: 20px 0 28px 0;
+    margin: 0;
+  }
+
+  .create-post{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 50px;
+    padding: 12px 20px;
+    text-align: center;
+    
+  }
+
+  input[type=text] {
+    width: 40%;
+    height: 50px;
+    resize: none;
+    background-color: #dedede;
+}
+
+.create-post-btn{
+    text-align: center;
+}

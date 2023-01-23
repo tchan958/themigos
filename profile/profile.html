@@ -6,7 +6,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="../styles/profile.css">
             <!-- Run BEFORE page is finished loading (before window.onload): -->
     <script src="/auth.js"></script>
     <script>
@@ -18,13 +18,28 @@
         <!-- link to post page -->
         <a href="/posts/index.html">Posts</a>
 
-        <!-- Create a post form -->
-        <input type="text" id="capturepost">
-        <button onclick="post()">Create a post</button>
 
         
         <!-- Logout button -->
+            <button onclick="logout()">Logout</button>
+
+        <!-- Create a post form -->
+        <div class="create-post">
+            <input type="text" id="capturepost">
+        </div>
+        <div class="create-post-btn">
+            <button onclick="post()">Create a post</button>
+        </div>
+
+<<<<<<< Updated upstream
+        
+        <!-- Logout button -->
         <button onclick="logout()">Logout</button>
+=======
+        <!-- function to show posts -->
+        <p id="getpost"></p>
+
+>>>>>>> Stashed changes
 
 
         <!-- Page specific JS -->
