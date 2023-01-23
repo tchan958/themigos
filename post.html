@@ -11,14 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
     <!-- STYLESHEET -->
-    <link rel="stylesheet" href="posts.css">
+    <link rel="stylesheet" href="styles/posts.css">
+    <script src="auth.js"></script>
     <script src="https://kit.fontawesome.com/c41e72e248.js" crossorigin="anonymous"></script>
 </head>
 <!-- NAVBAR -->
 <nav>
   <ul>
-    <li><a href="/posts/index.html" class="fa-solid fa-house"></a></li>
-    <li><a href="/registration.html">Register</a></li>
+    <li><a href="post.html" class="fa-solid fa-house"></a></li>
+    <li><a href="registration.html">Register</a></li>
     <li><a href="#">Service</a></li>
     <li><a href="#" class="fa-solid fa-phone"></a></li>
     <li id="search">
@@ -27,7 +28,7 @@
       </form>
     </li>
     <li><button onclick="logout()">Logout</button></li>
-    <li id="user"><a href="/profile/profile.html" class="fa-solid fa-user"></a></li>
+    <li id="user"><a href="profile.html" class="fa-solid fa-user"></a></li>
 
   </ul>
 </nav>
@@ -36,11 +37,15 @@
     <header>
         <h1>POSTS PAGE</h1>
     </header>
-        <!-- <p id="getdata"></p> -->
-    <main></main>
+        <p id="getdata"></p>
+    <main>
+      <div class="container" id="divForPost">
+                        
+      </div>
+    </main>
 
 
-    <script src="/posts/posts.js"></script>
+    <script src="posts.js"></script>
 </body>
 
 </html>
