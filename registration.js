@@ -34,3 +34,10 @@ form.addEventListener('submit', function (e) {
     e.preventDefault() 
     registerUser()
 })
+
+// redirect button
+let button = document.getElementById("signup");
+
+button.addEventListener("click", function(){
+    window.location.href = "/index.html";
+});

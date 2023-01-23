@@ -15,7 +15,7 @@
 <nav>
     <ul>
       <li><a href="#" class="fa-solid fa-house"></a></li>
-      <li><a href="#">About</a></li>
+      <li><a href="/registration.html">Register</a></li>
       <li><a href="#">Services</a></li>
       <li><a href="#" class="fa-solid fa-phone"></a></li>
       <li id="search">
@@ -23,8 +23,7 @@
           <input type="text" placeholder="Search..." id="search-input">
         </form>
       </li>
-      <li id="logout"><a href="login.html" class="fa-solid fa-right-from-bracket"></a></li>
-      <li id="user"><a href="#" class="fa-solid fa-user"></a></li>
+      <li id="user"><a href="/profile/profile.html" class="fa-solid fa-user"></a></li>
 
     </ul>
   </nav>  
@@ -33,27 +32,7 @@
     <header>
         <h1>POSTS PAGE</h1>
     </header>
-    <div class="post">
-        <div class="post-header">
-          <img src="profile.jpg" alt="User Profile Picture" class="profile-picture">
-          <h4 class="username">username</h4>
-        </div>
-        <img src="post-image.jpg" alt="Post Image" class="post-image">
-        <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, justo a tincidunt congue, nulla est aliquet quam.</p>
-              <!-- LIKE AND DISLIKE BUTTONS-->
-    <div class="wrapper">
-        <div id="like">
-            <i onclick="count()" class="fas fa-heart icon"></i>
-            <br>
-            <input id="likeCount" type="number" value="0">
-        </div>
-        <div class="dislike">
-            <i onclick="count1()" class="fas fa-heart-broken icon"></i>
-            <br>
-            <input id="dislikeCount" type="number" value="0">
-        </div>
-    </div>
-        </div>
+        <p id="getdata"></p>
     <main></main>
 
     <footer></footer>
