@@ -49,6 +49,29 @@
         </form>
 
     </div>
+
+    <div class="info">
+        <style>
+            info {
+                text-align: center;
+                color: blue;
+            }
+        </style>
+  <div style="text-align: center" id="slideshow">
+    <div class="slide" id="slide1">Welcome to Migos, the amigos for all blog posts regarding crime!</div>
+    <div class="slide" id="slide2">Shoutout to Rose, for helping me (me meaning Takyu :D)</div>
+    <div class="slide" id="slide3">Thank you for everyone that made it enjoyable. That means all of you!</div>
+  </div>
+        <script>
+              var texts = ["Welcome to Migos, the amigos for all blog posts regarding crime!", "Shoutout to Rose, for helping me", "Thank you for everyone that made it enjoyable. That means all of you!"];
+  var i = 0;
+  
+  setInterval(function() {
+    document.getElementById("slideshow").innerHTML = texts[i];
+    i = (i + 1) % texts.length;
+  }, 2000);
+        </script>
+    </div>
     <!-- Bootstrap Bundle (including Popper for popovers) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     
