@@ -17,7 +17,6 @@ body {
 
   input[type=text] {
     width: 40%;
-    height: 50px;
     resize: none;
     background-color: #dedede;
 }
@@ -25,3 +24,57 @@ body {
 .create-post-btn{
     text-align: center;
 }
+
+/* NAVBAR */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+#search, #logout, #user {
+    float: right;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #111;
+}
+
+#search-input {
+    padding: 12px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: 2px;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.post-btn{
+    height: 50px;
+    width: 100px;
+    font-size: 25px;
+}
+
