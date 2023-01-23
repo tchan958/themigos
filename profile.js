@@ -36,7 +36,7 @@ function post () {
   const token = getLoginData() 
   console.log(token.token)
   myHeaders.append("accept", "application/json");
-  myHeaders.append("Authorization", "Bearer" + token.token);
+  myHeaders.append("Authorization", "Bearer " + token.token);
   myHeaders.append("Content-Type", "application/json");
   
   let raw = JSON.stringify({
