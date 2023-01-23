@@ -54,12 +54,6 @@ function post () {
       .then(response => response.json())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));
-<<<<<<< Updated upstream
-    
-      document.getElementById("clearpost").value=" ";
-    }
-=======
-  
     }
 
 
@@ -101,4 +95,3 @@ function post () {
 //   <h4 class="time">${post.time}</h4>
 //   </div>
 //   `}
->>>>>>> Stashed changes
