@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/profile.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-        <script src="https://kit.fontawesome.com/c41e72e248.js" crossorigin="anonymous"></script>
-            <!-- Run BEFORE page is finished loading (before window.onload): -->
-    <script src="/auth.js"></script>
-    <script>
-        if (isLoggedIn() === false) window.location.replace("/");
-    </script>
-    </head>
-    <!-- NAVBAR -->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../styles/profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <script src="https://kit.fontawesome.com/c41e72e248.js" crossorigin="anonymous"></script>
+  <!-- Run BEFORE page is finished loading (before window.onload): -->
+  <script src="/auth.js"></script>
+  <script>
+    if (isLoggedIn() === false) window.location.replace("/");
+  </script>
+</head>
+<!-- NAVBAR -->
 <nav>
-    <ul>
-      <li><a href="/posts/index.html" class="fa-solid fa-house"></a></li>
-      <li><a href="/registration.html">Register</a></li>
-      <li><a href="#">Service</a></li>
-      <li><a href="#" class="fa-solid fa-phone"></a></li>
-      <li id="search">
-        <form>
-          <input type="text" placeholder="Search..." id="search-input">
-        </form>
-      </li>
-      <li id="user"><a href="/profile/profile.html" class="fa-solid fa-user"></a></li>
-      <li><h4>Logout here</h4><button onclick="logout()">Logout</button></li>
+  <ul>
+    <li><a href="/posts/index.html" class="fa-solid fa-house"></a></li>
+    <li><a href="/registration.html">Register</a></li>
+    <li><a href="#">Service</a></li>
+    <li><a href="#" class="fa-solid fa-phone"></a></li>
+    <li id="search">
+      <form>
+        <input type="text" placeholder="Search..." id="search-input">
+      </form>
+    </li>
+    <li><button onclick="logout()">Logout</button></li>
+    <li id="user"><a href="/profile/profile.html" class="fa-solid fa-user"></a></li>
 
-    </ul>
-  </nav>  
-    <body>
-        
-       
-<h2>Create your post here!</h2>
-<h3>Let us know what crimes you've done today!</h3>
-        <!-- Create a post form -->
-        <div class="create-post">
-            <input type="text" id="capturepost" placeholder="Start writing here">
-        </div>
-        <div class="create-post-btn">
-            <button class="post-btn" onclick="post()">Post</button>
-        </div>
+  </ul>
+</nav>
 
- <!-- Logout button -->
- <h4>Logout here</h4><button onclick="logout()">Logout</button>
- 
-        <!-- function to show posts -->
-        <!-- <p id="getpost"></p> -->
+<body>
 
 
+  <h2>Create your post here!</h2>
+  <h3>Let us know what crimes you've done today!</h3>
+  <!-- Create a post form -->
+  <div class="create-post">
+    <input type="text" id="capturepost" placeholder="Start writing here">
+  </div>
+  <div class="create-post-btn">
+    <button class="post-btn" onclick="post()">Post</button>
+  </div>
+
+  <!-- Logout button -->
+  <!-- <h4>Logout here</h4><button onclick="logout()">Logout</button> -->
+
+  <!-- function to show posts -->
+  <!-- <p id="getpost"></p> -->
 
 
-        <!-- Page specific JS -->
-        <script src="/profile/profile.js"></script>
-    </body>
+
+
+  <!-- Page specific JS -->
+  <script src="/profile/profile.js"></script>
+</body>
+
 </html>

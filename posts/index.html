@@ -3,7 +3,10 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Post</title>
+    <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- FONTAWESOME CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
@@ -13,35 +16,31 @@
 </head>
 <!-- NAVBAR -->
 <nav>
-    <ul>
-      <li><a href="#" class="fa-solid fa-house"></a></li>
-      <li><a href="/registration.html">Register</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#" class="fa-solid fa-phone"></a></li>
-      <li id="search">
-        <form>
-          <input type="text" placeholder="Search..." id="search-input">
-        </form>
-      </li>
-      <li id="user"><a href="/profile/profile.html" class="fa-solid fa-user"></a></li>
+  <ul>
+    <li><a href="/posts/index.html" class="fa-solid fa-house"></a></li>
+    <li><a href="/registration.html">Register</a></li>
+    <li><a href="#">Service</a></li>
+    <li><a href="#" class="fa-solid fa-phone"></a></li>
+    <li id="search">
+      <form>
+        <input type="text" placeholder="Search..." id="search-input">
+      </form>
+    </li>
+    <li><button onclick="logout()">Logout</button></li>
+    <li id="user"><a href="/profile/profile.html" class="fa-solid fa-user"></a></li>
 
-    </ul>
-  </nav>  
+  </ul>
+</nav>
 <body>
 
     <header>
         <h1>POSTS PAGE</h1>
     </header>
-        <p id="getdata"></p>
+        <!-- <p id="getdata"></p> -->
     <main></main>
 
-    <footer></footer>
 
-
-    <!-- Bootstrap Bundle (including Popper for popovers) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
-    <script type="text/javascript" src="script.js"></script>
+    <script src="/posts/posts.js"></script>
 </body>
 
 </html>
